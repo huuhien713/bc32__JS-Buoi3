@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS-Buoi-3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container my-5">
+           
+        <!-- Bài tập 1: Nhập vào số tiền lương (1 ngày) và số ngày làm, In ra tổng số tiền lương -->
+        <h3>Bài tập 1: Nhập vào số tiền lương (1 ngày) và số ngày làm, In ra tổng số tiền lương.</h3>
+        <br>
+        
+        <div class="card w-50">
+            <div class="card-header text-center text-white bg-dark py-3">
+                <h4 class="m-0 rounded-lg">Tính Tiền Lương</h4>
+            </div>
+            <div class="card-body">
+                <div class="">
+                    <label>Tiền lương 1 ngày: </label>
+                    <input id="tienLuong1Ngay" class="form-control" type="text">
+                </div>
+                <br>
+                <div class="">
+                    <label>Số ngày làm: </label>
+                    <input id="soNgayLam" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="btnTinhLuong" class="btn btn-primary mb-3" type="button">Tính Lương</button>
+                <div class="alert alert-primary">
+                    Tổng tiền lương là: <span id="tongLuong"></span>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Bài tập 2: -->
+        <h3>Bài tập 2: Nhập vào 5 số thực, In ra trung bình của 5 số thực.</h3>
+        <br>
+
+        <div class="card text-center">
+            <div class="card-header text-white bg-dark py-3">
+                <h4 class="m-0 rounded-lg">Tính Giá Trị Trung Bình</h4>
+            </div>
+            <div class="card-body ">
+                <div class="row flex-nowrap form-group">
+                    <div class="col">
+                        <label>Nhập số thực thứ 1:</label>
+                        <input id="soThuc1" class="form-control p-2" type="text">
+                    </div>
+                    <div class="col">
+                        <label>Nhập số thực thứ 2:</label>
+                        <input id="soThuc2" class="form-control p-2" type="text">
+                    </div>
+                    <div class="col">
+                        <label>Nhập số thực thứ 3:</label>
+                        <input id="soThuc3" class="form-control p-2" type="text">
+                    </div>
+                    <div class="col">
+                        <label>Nhập số thực thứ 4:</label>
+                        <input id="soThuc4" class="form-control p-2" type="text">
+                    </div>
+                    <div class="col">
+                        <label>Nhập số thực thứ 5:</label>
+                        <input id="soThuc5" class="form-control p-2" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="btnTinhTB" class="btn btn-primary mb-3">Tính TB</button>
+                <div class="alert alert-primary">
+                    Kết quả là: <span id="trungBinh"></span>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Bài tập 3: -->
+        <h3>Bài tập 3: Nhập vào số USD cần chuyển đổi, In ra kết quả số tiền VNĐ tương ứng.</h3>
+        <br>
+
+        <div class="card w-50">
+            <div class="card-header text-center text-white bg-dark py-3">
+                <h4 class="m-0 rounded-lg">Quy Đổi Tiền</h4>
+            </div>
+            <div class="card-body">
+                <div class="">
+                    <label>Giá trị 1 USD hiện tại là: </label>
+                    <input class="form-control" type="text" value="23.500" placeholder="VNĐ" readonly>
+                </div>
+                <br>
+                <div class="">
+                    <label>Nhập Số USD Cần Chuyển Đổi: </label>
+                    <input id="soUSD" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="btnChuyenDoi" class="btn btn-primary mb-3" type="button">Tính Tiền</button>
+                <div class="alert alert-primary">
+                    Số tiền VNĐ tương ứng là: <span id="chuyenDoi"></span>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Bài tập 4: -->
+        <h3>Bài tập 4: Nhập vào chiều dài và chiều rộng, In ra diện tích và chu vi hình chữ nhật.</h3>
+        <br>
+
+        <div class="card w-50">
+            <div class="card-header text-center text-white bg-dark py-3">
+                <h4 class="m-0 rounded-lg">Tính Diện Tích & Chu Vi Hình Chữx Nhật</h4>
+            </div>
+            <div class="card-body">
+                <div class="">
+                    <label>Nhập Chiều Dài: </label>
+                    <input id="chieuDai" class="form-control" type="text">
+                </div>
+                <br>
+                <div class="">
+                    <label>Nhập Chiều Rộng: </label>
+                    <input id="chieuRong" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="btnTinh" class="btn btn-primary mb-3" type="button">Tính</button>
+                <div class="alert alert-primary">
+                    Diện Tích HCN là: <span id="dienTich"></span>
+                    <br>
+                    <br>
+                    Chu Vi HCN là: <span id="chuVi"></span>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Bài tập 5: -->
+        <h3>Bài tập 5: Nhập vào 1 số có 3 chữ số, In ra tổng 3 ký số của số vừa nhập.</h3>
+        <br>
+
+        <div class="card w-50">
+            <div class="card-header text-center text-white bg-dark py-3">
+                <h4 class="m-0 rounded-lg">Tổng 3 Ký Số</h4>
+            </div>
+            <div class="card-body">
+                <div class="">
+                    <label>Nhập 1 số có 3 chữ số: </label>
+                    <input id="so3ChuSo" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="btnTong3KySo" class="btn btn-primary mb-3" type="button">Tính Tổng</button>
+                <div class="alert alert-primary">
+                    Tổng 3 ký số là: <span id="tong3KySo"></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
